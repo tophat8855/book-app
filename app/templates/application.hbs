@@ -1,3 +1,14 @@
-<h2 id="title">Welcome to Ember.js</h2>
+<h1>The BAR (Books, Authors, Reviews)
+  <p>
+    {{#link-to 'authors'}} Authors {{/link-to}} |
+    {{#link-to 'books'}} Books {{/link-to}}
 
-{{outlet}}
+  </p>
+</h1>
+
+<div class="ui grid">
+  <div class="one wide column"></div>
+  <div class="fifteen wide column">
+    {{outlet}}
+  </div>
+</div>
